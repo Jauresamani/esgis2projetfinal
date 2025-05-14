@@ -47,7 +47,7 @@ EXPOSE 8080
 ENTRYPOINT ["python", "app.py"]
 ```
 
-![image](https://github.com/user-attachments/assets/63fa2963-3fcd-4f5f-8609-a49ca2c73500)
+![image](https://github.com/user-attachments/assets/63fa2963-3fcd-4f5f-8609-a49ca2c73500](https://github.com/Jauresamani/esgis2projetfinal/blob/main/ScreenREADME/1dockerfile.png)
 
 
 2. Fichier requirements.txt
