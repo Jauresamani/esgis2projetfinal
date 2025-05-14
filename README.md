@@ -481,6 +481,6 @@ kubectl get all -n icgroup
 
 2. Conclusion
 
-Grâce à cette orchestration complète dans Minikube, la société IC GROUP dispose désormais d’une solution robuste et automatisée pour héberger Odoo, pgAdmin ainsi qu’un site web Flask comme vitrine. L’utilisation de Kubernetes assure l’évolutivité et la résilience des services.
+Grâce à cette orchestration complèteavec kubernetes, la société IC GROUP dispose désormais d’une solution robuste et automatisée pour héberger Odoo, pgAdmin ainsi qu’un site web Flask comme vitrine. L’utilisation de Kubernetes assure l’évolutivité et la résilience des services.
 
 
