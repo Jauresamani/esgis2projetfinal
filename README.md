@@ -249,7 +249,6 @@ kubectl apply -f odoo-deployment.yaml
 ![image](https://github.com/Jauresamani/esgis2projetfinal/blob/main/ScreenREADME/9odoo-depl.png)
 
 
-![image](https://github.com/user-attachments/assets/245599c5-1f9a-42c5-9ee8-6407b3ce871e)
 
 
 ## Étape V - Déploiement pgAdmin avec configuration
@@ -463,7 +462,7 @@ spec:
 
 kubectl apply -f services.yaml
 
-![image](https://github.com/user-attachments/assets/85f28c6a-2872-427a-9604-0f763e237af9)
+![image](https://github.com/Jauresamani/esgis2projetfinal/blob/main/ScreenREADME/10pgadmindep.png)
 
 
 
@@ -473,7 +472,7 @@ kubectl apply -f services.yaml
 
 kubectl get all -n icgroup
 
-![image](https://github.com/user-attachments/assets/f832bda1-75fe-4980-b6d8-e136e12c9dd3)
+![image](https://github.com/Jauresamani/esgis2projetfinal/blob/main/ScreenREADME/11getall.png)
 
 
 ![image](https://github.com/user-attachments/assets/ec17b6da-213e-4528-8abf-36679f42ddac)
