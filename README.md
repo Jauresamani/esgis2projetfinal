@@ -346,45 +346,6 @@ kubectl apply -f pgadmin-deployment.yaml
 ![image](https://github.com/Jauresamani/esgis2projetfinal/blob/main/ScreenREADME/10pgadmindep.png)
 
 
-## Étape VI - Déploiement de l’ic-webapp dans le cluster
-
-
-```bash
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: ic-webapp
-  namespace: icgroup
-  labels:
-    env: prod
-spec:
-  replicas: 2
-  selector:
-    matchLabels:
-      app: ic-webapp
-  template:
-    metadata:
-      labels:
-        app: ic-webapp
-    spec:
-      containers:
-      - name: ic-webapp
-        image: kamani3/ic-webapp:1.0
-        ports:
-        - containerPort: 8080
-        env:
-        - name: ODOO_URL
-          value: http://192.168.49.2:31987
-        - name: PGADMIN_URL
-          value: http://192.168.49.2:30975
-```
-kubectl apply -f ic-webapp-deployment.yaml 
-
-![image](https://github.com/Jauresamani/esgis2projetfinal/blob/main/ScreenREADME/12icwe.png)
-
-
-
-
 
 Étape VII - Services & accès
 
@@ -463,6 +424,47 @@ spec:
 kubectl apply -f services.yaml
 
 ![image](https://github.com/Jauresamani/esgis2projetfinal/blob/main/ScreenREADME/10pgadmindep.png)
+
+
+## Étape VI - Déploiement de l’ic-webapp dans le cluster
+
+
+```bash
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ic-webapp
+  namespace: icgroup
+  labels:
+    env: prod
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ic-webapp
+  template:
+    metadata:
+      labels:
+        app: ic-webapp
+    spec:
+      containers:
+      - name: ic-webapp
+        image: kamani3/ic-webapp:1.0
+        ports:
+        - containerPort: 8080
+        env:
+        - name: ODOO_URL
+          value: http://192.168.49.2:31987
+        - name: PGADMIN_URL
+          value: http://192.168.49.2:30975
+```
+kubectl apply -f ic-webapp-deployment.yaml 
+
+![image](https://github.com/Jauresamani/esgis2projetfinal/blob/main/ScreenREADME/12icwe.png)
+
+
+
+
 
 
 
