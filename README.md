@@ -58,30 +58,29 @@ Flask
 
 docker build -t ic-webapp:1.0 .
 
-![image](https://github.com/user-attachments/assets/5c96c8f1-a569-435f-9844-540c80a9038b)
-
+![image](https://github.com/Jauresamani/esgis2projetfinal/blob/main/ScreenREADME/2image.png)
 4. Test local
 
 docker run -d --name test-ic-webapp -p 8080:8080 -e ODOO_URL=https://www.odoo.com -e PGADMIN_URL=https://www.pgadmin.org ic-webapp:1.0
 
-![image](https://github.com/user-attachments/assets/a5b57871-7c74-4d9a-9fdf-807d68bde15c)
+![image](https://github.com/Jauresamani/esgis2projetfinal/blob/main/ScreenREADME/3docker.png)
 
 
 5. Suppression du container de test
 
 docker rm -f test-ic-webapp
 
-![image](https://github.com/user-attachments/assets/02d8625d-1b42-4e76-85f2-742ad5399926)
+![image](https://github.com/Jauresamani/esgis2projetfinal/blob/main/ScreenREADME/4dockerrm.png)
 
 6. Push sur Docker Hub
 
 docker tag ic-webapp:1.0 kamani3/ic-webapp:1.0
 docker push kamani3/ic-webapp:1.0
 
-![image](https://github.com/user-attachments/assets/2230bfed-7055-4478-8d50-c95118b6166f)
+![image](https://github.com/Jauresamani/esgis2projetfinal/blob/main/ScreenREADME/5dockerpush.png)
 
 
-![image](https://github.com/user-attachments/assets/cb75b6aa-360a-46dc-bcba-1cf0fc168b54)
+![image](https://github.com/Jauresamani/esgis2projetfinal/blob/main/ScreenREADME/14dockerhub.png)
 
 
 ## Étape II - Déploiement Kubernetes
@@ -99,7 +98,7 @@ metadata:
 
 kubectl apply -f namespace.yaml
 
-![image](https://github.com/user-attachments/assets/197e13dd-478a-468b-a2ad-f96fb3ecb804)
+![image](https://github.com/Jauresamani/esgis2projetfinal/blob/main/ScreenREADME/6namespace.png)
 
 
 ## Étape III - Déploiement PostgreSQL
@@ -162,7 +161,7 @@ spec:
 ```
 kubectl apply -f postgres-deployment.yaml
 
-![image](https://github.com/user-attachments/assets/6a984651-8b9b-4268-8356-71c795d3c700)
+![image](https://github.com/Jauresamani/esgis2projetfinal/blob/main/ScreenREADME/7posgres.png)
 
 
 
@@ -247,7 +246,7 @@ spec:
 ```
 kubectl apply -f odoo-deployment.yaml 
 
-![image](https://github.com/user-attachments/assets/56252ec3-116b-4de2-988b-02bb3ccb26e0)
+![image](https://github.com/Jauresamani/esgis2projetfinal/blob/main/ScreenREADME/9odoo-depl.png)
 
 
 ![image](https://github.com/user-attachments/assets/245599c5-1f9a-42c5-9ee8-6407b3ce871e)
@@ -301,7 +300,7 @@ data:
     }
 ```
 
-![image](https://github.com/user-attachments/assets/337c6f47-77f0-4387-acec-ec67652dbe34)
+
 
 
 2. Déploiement pgAdmin avec volume
@@ -345,7 +344,7 @@ spec:
 ```
 kubectl apply -f pgadmin-deployment.yaml
 
-![image](https://github.com/user-attachments/assets/d88fb1f1-8fec-4c44-b854-07c7bf02335f)
+![image](https://github.com/Jauresamani/esgis2projetfinal/blob/main/ScreenREADME/10pgadmindep.png)
 
 
 ## Étape VI - Déploiement de l’ic-webapp dans le cluster
@@ -382,7 +381,7 @@ spec:
 ```
 kubectl apply -f ic-webapp-deployment.yaml 
 
-![image](https://github.com/user-attachments/assets/194a4229-06fe-4da3-aed2-6ea008a81f88)
+![image](https://github.com/Jauresamani/esgis2projetfinal/blob/main/ScreenREADME/12icwe.png)
 
 
 
