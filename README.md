@@ -157,7 +157,7 @@ spec:
       volumes:
         - name: postgres-storage
           persistentVolumeClaim:
-            claimName: odoo-pvc
+            claimName: postgres-pvc
 ```
 kubectl apply -f postgres-deployment.yaml
 
