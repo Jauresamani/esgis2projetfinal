@@ -424,7 +424,7 @@ spec:
 kubectl apply -f services.yaml
 
 ![image](https://github.com/Jauresamani/esgis2projetfinal/blob/main/ScreenREADME/10pgadmindep.png)
-
+![image](https://github.com/Jauresamani/esgis2projetfinal/blob/main/ScreenREADME/13pgadmin.png)
 
 ## Étape VI - Déploiement de l’ic-webapp dans le cluster
 
@@ -477,7 +477,6 @@ kubectl get all -n icgroup
 ![image](https://github.com/Jauresamani/esgis2projetfinal/blob/main/ScreenREADME/11getall.png)
 
 
-![image](https://github.com/user-attachments/assets/ec17b6da-213e-4528-8abf-36679f42ddac)
 
 
 2. Conclusion
