@@ -348,7 +348,7 @@ kubectl apply -f pgadmin-deployment.yaml
 
 
 
-Étape VII - Services & accès
+## Étape VII - Services 
 
 ```bash
 ---
@@ -424,7 +424,7 @@ spec:
 
 kubectl apply -f services.yaml
 
-
+![image]https://github.com/Jauresamani/esgis2projetfinal/blob/main/ScreenREADME/15svc.png)
 
 ## Étape VI - Déploiement de l’ic-webapp dans le cluster
 
