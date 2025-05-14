@@ -474,7 +474,7 @@ kubectl apply -f ic-webapp-deployment.yaml
 
 kubectl get all -n icgroup
 
-![image](https://github.com/Jauresamani/esgis2projetfinal/blob/main/ScreenREADME/11getall.png)
+![image](https://github.com/Jauresamani/esgis2projetfinal/blob/main/ScreenREADME/16getall.png)
 
 
 
