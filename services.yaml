@@ -1,0 +1,69 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: postgres
+  namespace: icgroup
+  labels:
+    env: prod
+spec:
+  selector:
+    app: postgres
+  type: ClusterIP
+  ports:
+    - port: 5432
+      targetPort: 5432
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: odoo-service
+  namespace: icgroup
+  labels:
+    env: prod
+spec:
+  selector:
+    app: odoo
+  type: NodePort
+  ports:
+    - name: http
+      protocol: TCP
+      port: 8069
+      targetPort: 8069
+      nodePort: 31987
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: pgadmin-service
+  namespace: icgroup
+  labels:
+    env: prod
+spec:
+  selector:
+    app: pgadmin
+  type: NodePort
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: 80
+      nodePort: 30975
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ic-webapp-service
+  namespace: icgroup
+  labels:
+    env: prod
+spec:
+  selector:
+    app: ic-webapp
+  type: NodePort
+  ports:
+    - name: http
+      protocol: TCP
+      port: 8080
+      targetPort: 8080
+      nodePort: 31276
