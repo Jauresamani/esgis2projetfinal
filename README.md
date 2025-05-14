@@ -344,6 +344,7 @@ spec:
 kubectl apply -f pgadmin-deployment.yaml
 
 ![image](https://github.com/Jauresamani/esgis2projetfinal/blob/main/ScreenREADME/10pgadmindep.png)
+![image](https://github.com/Jauresamani/esgis2projetfinal/blob/main/ScreenREADME/13pgadmin.png)
 
 
 
@@ -423,8 +424,7 @@ spec:
 
 kubectl apply -f services.yaml
 
-![image](https://github.com/Jauresamani/esgis2projetfinal/blob/main/ScreenREADME/10pgadmindep.png)
-![image](https://github.com/Jauresamani/esgis2projetfinal/blob/main/ScreenREADME/13pgadmin.png)
+
 
 ## Étape VI - Déploiement de l’ic-webapp dans le cluster
 
